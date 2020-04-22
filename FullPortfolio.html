@@ -176,6 +176,19 @@
             color: #22315f;
             margin: 0;
         }
+        /* modal */
+        .modal {
+            color: #22315f;
+        }
+        .modal button[type="submit"],
+        .modal button[type="submit"]:hover,
+        .modal button[type="submit"]:active,
+        .modal button[type="submit"]:focus {
+            border: none;
+            background-color:#ea4c33 !important;
+            outline: none;
+            box-shadow: none !important;
+        }
     </style>
     </link>
 </head>
@@ -185,7 +198,7 @@
     <nav class="navbar shadow navbar-expand-lg fixed-top">
         <div class="col-sm-7 row d-flex align-items-center">
 
-            <a class="navbar-brand" href="Homepage.html">
+            <a class="navbar-brand" href="index.html">
                 <img class="col-sm-1 logo" src="https://drive.google.com/uc?id=1VU2WgoVXNfG_4wgz8ZEZsi7UTKOQpMyJ" />
                 dawn humo
             </a>
@@ -270,7 +283,8 @@
     <footer class="footer-container">
         <div class="contact d-flex flex-column justify-content-center align-items-center">
             <p class="invite-sentence">
-                I'd love to hear from you <3 </p> <button class="wanna-contact">
+                I'd love to hear from you <3 </p> <button class="wanna-contact" data-toggle="modal"
+                    data-target=".modal">
                     Wanna contact me?
                     </button>
         </div>
@@ -304,6 +318,36 @@
             <p class="copyright">
                 © Dawn Humo 2020
             </p>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Quick contact</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email" required />
+                                <div class="invalid-feedback">Required field</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleMessage1">Message</label>
+                                <textarea type="text" class="form-control" id="exampleInputMessage1"
+                                    placeholder="Enter your message..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary float-right">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
 </body>

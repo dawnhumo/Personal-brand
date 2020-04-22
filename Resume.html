@@ -1,27 +1,24 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>
-        Dawn Humo
-    </title>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1" name="viewport" />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
-    <!-- Latest compiled and minified CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
-    </script>
-    <script src="https://kit.fontawesome.com/a076d05399.js">
-    </script>
-    <style>
-        * {
+    <head>
+        <title>
+            Dawn Humo
+        </title>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+            </script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+            </script>
+            <script src="https://kit.fontawesome.com/a076d05399.js">
+            </script>
+            <style>
+                * {
             margin: 0;
             padding: 0;
             font-family: 'Oswald', sans-serif;
@@ -230,147 +227,190 @@
             color: #22315f;
             margin: 0;
         }
-    </style>
-    </link>
-</head>
-
-<body class="body">
-    <!-- nav bar -->
-    <nav class="navbar shadow navbar-expand-lg fixed-top">
-        <div class="col-sm-7 row d-flex align-items-center">
-
-            <a class="navbar-brand" href="Homepage.html">
-                <img class="col-sm-1 logo" src="https://drive.google.com/uc?id=1VU2WgoVXNfG_4wgz8ZEZsi7UTKOQpMyJ" />
-                dawn humo
-            </a>
-        </div>
-        <div class="collapse navbar-collapse col-sm-5" id="navbarSupportedContent">
-            <ul class="navbar-nav container-fluid">
-                <li class="nav-item col-sm-1">
-                    <a class="nav-link active" href="Resume.html">
-                        Resume
-                        <span class="sr-only">
-                            (current)
-                        </span>
-                    </a>
-                </li>
-                <li class="nav-item col-sm-1">
-                    <a class="nav-link" href="Portfolio.html">
-                        Portfolio
-                    </a>
-                </li>
-                <li class="nav-item dropdown col-sm-1">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="Myblog.html" id="navbarDropdown"
-                        role="button">
-                        My blog
-                    </a>
-                    <div aria-labelledby="navbarDropdown" class="dropdown-menu">
-                        <a class="dropdown-item" href="Vietnamese.html">
-                            Vietnamese
+        /* modal */
+        .modal {
+            color: #22315f;
+        }
+        .modal button[type="submit"],
+        .modal button[type="submit"]:hover,
+        .modal button[type="submit"]:active,
+        .modal button[type="submit"]:focus {
+            border: none;
+            background-color:#ea4c33 !important;
+            outline: none;
+            box-shadow: none !important;
+        }
+            </style>
+        </link>
+    </head>
+    <body class="body">
+        <!-- nav bar -->
+        <nav class="navbar shadow navbar-expand-lg fixed-top">
+            <div class="col-sm-7 row d-flex align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img class="col-sm-1 logo" src="https://drive.google.com/uc?id=1VU2WgoVXNfG_4wgz8ZEZsi7UTKOQpMyJ"/>
+                    dawn humo
+                </a>
+            </div>
+            <div class="collapse navbar-collapse col-sm-5" id="navbarSupportedContent">
+                <ul class="navbar-nav container-fluid">
+                    <li class="nav-item col-sm-1">
+                        <a class="nav-link active" href="Resume.html">
+                            Resume
+                            <span class="sr-only">
+                                (current)
+                            </span>
                         </a>
-                        <div class="dropdown-divider">
+                    </li>
+                    <li class="nav-item col-sm-1">
+                        <a class="nav-link" href="Portfolio.html">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown col-sm-1">
+                        <a class="nav-link" href="Myblog.html">
+                            My blog
+                        </a>
+                        
+                    </li>
+                    <li class="nav-item col-sm-1">
+                        <a class="nav-link" href="Aboutme.html">
+                            About me
+                        </a>
+                    </li>
+                    <li class="nav-item col-sm-1">
+                        <a class="nav-link" href="Contactme.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- profile -->
+        <div class="resume-container">
+            <div class="profile d-flex flex-column justify-content-center align-items-center">
+                <h1 class="text-center">
+                    Profile
+                </h1>
+                <div class="col d-flex align-items-center">
+                    <div class="menu col d-flex justify-content-center align-items-center">
+                        <p class="text-center">
+                            Education
+                        </p>
+                        <img src="image/education.png"/>
+                    </div>
+                    <div class="menu col d-flex justify-content-center align-items-center">
+                        <p class="text-center">
+                            Experiences
+                        </p>
+                        <img src="image/experience.png"/>
+                    </div>
+                    <div class="aspect-group col d-flex flex-column justify-content-center align-items-center">
+                        <div class="avatar-container">
+                            <img src="image/me.jpg"/>
                         </div>
-                        <a class="dropdown-item" href="English.html">
-                            in English
+                    </div>
+                    <div class="menu col d-flex justify-content-center align-items-center">
+                        <p class="text-center">
+                            Abilities
+                        </p>
+                        <img src="image/ability.png"/>
+                    </div>
+                    <div class="menu col d-flex justify-content-center align-items-center">
+                        <p class="text-center">
+                            My CV
+                        </p>
+                        <img src="image/cv.png"/>
+                    </div>
+                </div>
+            </div>
+            <div class="full-resume d-flex">
+                <div class="col pic">
+                    <img src=""/>
+                </div>
+                <div class="invite-click-container col no-gutters">
+                    <div class="invite-click d-flex flex-column offset-sm-1 no-gutters">
+                        <p class="col-sm-8">
+                            If you want to see the full resume
+                        </p>
+                        <a href="FullResume.html">
+                            Click here
                         </a>
                     </div>
-                </li>
-                <li class="nav-item col-sm-1">
-                    <a class="nav-link" href="Aboutme.html">
-                        About me
-                    </a>
-                </li>
-                <li class="nav-item col-sm-1">
-                    <a class="nav-link" href="Contactme.html">
-                        Contact
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <!-- profile -->
-    <div class="resume-container">
-        <div class="profile d-flex flex-column justify-content-center align-items-center">
-            <h1 class="text-center">Profile</h1>
-            <div class="col d-flex align-items-center">
-                <div class="menu col d-flex justify-content-center align-items-center">
-                    <p class="text-center">Education</p>
-                    <img src="image/education.png" />
-                </div>
-                <div class="menu col d-flex justify-content-center align-items-center">
-                    <p class="text-center">Experiences</p>
-                    <img src="image/experience.png" />
-                </div>
-                <div class="aspect-group col d-flex flex-column justify-content-center align-items-center">
-                    <div class="avatar-container">
-                        <img src="image/me.jpg" />
-                    </div>
-                </div>
-                <div class="menu col d-flex justify-content-center align-items-center">
-                    <p class="text-center">Abilities</p>
-                    <img src="image/ability.png" />
-                </div>
-                <div class="menu col d-flex justify-content-center align-items-center">
-                    <p class="text-center">My CV</p>
-                    <img src="image/cv.png" />
                 </div>
             </div>
         </div>
-
-        <div class="full-resume d-flex">
-            <div class="col pic">
-                <img src="" />
-            </div>
-
-            <div class="invite-click-container col no-gutters">
-                <div class="invite-click d-flex flex-column offset-sm-1 no-gutters">
-                    <p class="col-sm-8">If you want to see the full resume</p>
-                    <a href="FullResume.html">Click here</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- footer -->
-    <footer class="footer-container">
-        <div class="contact d-flex flex-column justify-content-center align-items-center">
-            <p class="invite-sentence">
-                I'd love to hear from you <3 </p> <button class="wanna-contact">
+        <!-- footer -->
+        <footer class="footer-container">
+            <div class="contact d-flex flex-column justify-content-center align-items-center">
+                <p class="invite-sentence">
+                    I'd love to hear from you <3
+                </p>
+                <button class="wanna-contact" data-toggle="modal"
+                    data-target=".modal">
                     Wanna contact me?
                     </button>
-        </div>
-        <div class="copyright-links d-flex flex-column justify-content-center align-items-center">
-
-            <div class="social-link col-sm-4 d-flex justify-content-between mb-4">
-                <a class="connect-link" href="https://www.facebook.com/bx.ks.3" target="_blank">
-                    <i class="fab fa-facebook-f">
-                    </i>
-                </a>
-                <a class="connect-link" href="https://www.instagram.com/huongg.momm/" target="_blank">
-                    <i class="fab fa-instagram">
-                    </i>
-                </a>
-                <a class="connect-link" href="https://www.behance.net/dawnhumo98" target="_blank">
-                    <i class="fab fa-behance">
-                    </i>
-                </a>
-                <a class="connect-link" href="https://www.linkedin.com/in/huong-do-330241187/" target="_blank">
-                    <i class="fab fa-linkedin-in">
-                    </i>
-                </a>
-                <a class="connect-link" href="https://twitter.com/DawnHumo" target="_blank">
-                    <i class="fab fa-twitter">
-                    </i>
-                </a>
             </div>
-            <p class="via">
-                see me via other social nerwork
-            </p>
-            <p class="copyright">
-                © Dawn Humo 2020
-            </p>
-        </div>
-    </footer>
-</body>
+            <div class="copyright-links d-flex flex-column justify-content-center align-items-center">
+                <div class="social-link col-sm-4 d-flex justify-content-between mb-4">
+                    <a class="connect-link" href="https://www.facebook.com/bx.ks.3" target="_blank">
+                        <i class="fab fa-facebook-f">
+                        </i>
+                    </a>
+                    <a class="connect-link" href="https://www.instagram.com/huongg.momm/" target="_blank">
+                        <i class="fab fa-instagram">
+                        </i>
+                    </a>
+                    <a class="connect-link" href="https://www.behance.net/dawnhumo98" target="_blank">
+                        <i class="fab fa-behance">
+                        </i>
+                    </a>
+                    <a class="connect-link" href="https://www.linkedin.com/in/huong-do-330241187/" target="_blank">
+                        <i class="fab fa-linkedin-in">
+                        </i>
+                    </a>
+                    <a class="connect-link" href="https://twitter.com/DawnHumo" target="_blank">
+                        <i class="fab fa-twitter">
+                        </i>
+                    </a>
+                </div>
+                <p class="via">
+                    see me via other social nerwork
+                </p>
+                <p class="copyright">
+                    © Dawn Humo 2020
+                </p>
+            </div>
+            <!-- modal -->
+        <div class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Quick contact</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email" required />
+                                <div class="invalid-feedback">Required field</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleMessage1">Message</label>
+                                <textarea type="text" class="form-control" id="exampleInputMessage1"
+                                    placeholder="Enter your message..."></textarea>
+                            </div>
 
+                            <button type="submit" class="btn btn-primary float-right">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </footer>
+    </body>
 </html>
