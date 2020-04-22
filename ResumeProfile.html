@@ -70,10 +70,9 @@
             max-width: 90px;
         }
 
-        /* resume */
+        /* full resume */
         .resume-container {
             padding-top: 80px;
-            padding-bottom: 80px;
         }
 
         .profile {
@@ -82,48 +81,34 @@
             height: calc(100vh - 80px);
         }
 
-       /* .profile h1:hover {
-            color: #ea4c33;
-        }*/
-
         .profile p {
-            font-size: 32px;
-            letter-spacing: 1px;
+            font-size: 24px;
+            letter-spacing: 2px;
             font-weight: 400;
-            color: #09184a;
         }
 
         .avatar-container {
             border-radius: 50%;
             border: 5px solid #444;
-            width: 250px;
-            height: 250px;
+            width: 300px;
+            height: 300px;
             margin-left: 15px;
             margin-right: 15px;
             overflow: hidden;
         }
-
-        .avatar-container:hover {
-            border-color: #ea4c33;
-        }
-
         .avatar-container img {
             width: 100%;
-
         }
+
         .menu {
             position: relative;
             height: 150px;
         }
 
-        .menu p:hover {
-            color: #ea4c33!important;
-            text-decoration: none!important;
+        h3 {
+            padding-bottom: 15px;
         }
-        .menu a:hover {
-            color: #ea4c33!important;
-            text-decoration: none!important;
-}
+
         .menu img {
             position: absolute;
             bottom: 0;
@@ -131,54 +116,41 @@
             height: 40px;
         }
 
-        .text-center {
-            font-size: 48px;
-
+        .label {
+            font-size: 20px !important;
+            font-weight: 400 !important;
+            margin-bottom: 0px;
         }
 
-        .full-resume {
-            height: calc(100vh - 80px);
+        .content {
+            font-size: 18px !important;
+            font-weight: 300 !important;
+            margin: 0;
+            padding-bottom: 10px;
+            font-family: Raleway, sans-serif;
         }
 
-        .pic {
-            background-color: #999;
-            overflow: hidden;
+        .resume-block {
+            margin-top: 15px;
+            margin-bottom: 60px;
         }
 
-        .pic img {
-            width: 100%
-            ;
+        .resume-block i {
+            font-size: 12px !important;
+            margin-right: 5px;
         }
 
-        .invite-click-container {
-            background-color: #fc926d;
+        .cv img {
+            width: 100%;
         }
-
-        .invite-click {
-            padding-top: 25%;
-            color: #fff;
-        }
-
-        .invite-click p {
-            /*font-style: italic;*/
-            font-size: 32px;
-            font-weight: 400;
-        }
-
-        .invite-click a {
-            padding-top: 10%;
-            font-weight: 600;
-            font-size: 42px;
-            color: #fff;
-        }
-
-        .invite-click a:hover {
-            color: #09184a;
+        .cv-container {
+            padding-bottom: 100px;
+            padding-top: 50px;
         }
 
         /*footer*/
         .footer-container {
-            
+            /* height: calc(100vh - 80px); */
             background-color: #fc926d;
             padding-bottom: 30px;
             margin-top: 30px;
@@ -279,7 +251,7 @@
                             Portfolio
                         </a>
                     </li>
-                    <li class="nav-item dropdown col-sm-1">
+                    <li class="nav-item col-sm-1">
                         <a class="nav-link" href="Myblog.html">
                             My blog
                         </a>
@@ -300,69 +272,49 @@
         <!-- profile -->
         <div class="resume-container">
             <div class="profile d-flex flex-column justify-content-center align-items-center">
-              <!--   <a href="FullResume.html"> -->
                 <h1 class="text-center">
                     Profile
-                <!-- </a> -->
                 </h1>
-                <div class="col d-flex align-items-center">
-                    <div class="menu col d-flex justify-content-center align-items-center">
-                        <a href="ResumeEducation.html">
-                        <p class="text-center">
-                            Education
+                <div class="col-sm-11 d-flex align-items-center">
+                    <div class="menu col d-flex flex-column align-items-end">
+                        <h3>
+                            Details
+                        </h3>
+                        <p class="label">
+                            Name
                         </p>
-                    </a>
-                        <img src="image/education.png"/>
-                    </div>
-                    <div class="menu col d-flex justify-content-center align-items-center">
-                        <a href="ResumeEx.html">
-                        <p class="text-center">
-                            Experiences
+                        <p class="content">
+                            Do Song Huong (Dawn Humo)
                         </p>
-                    </a>
-                        <img src="image/experience.png"/>
+                        <p class="label">
+                            Age
+                        </p>
+                        <p class="content">
+                            22 years
+                        </p>
+                        <p class="label">
+                            Location
+                        </p>
+                        <p class="content">
+                            Ha Noi, Viet Nam
+                        </p>
                     </div>
-                    <div class="aspect-group col d-flex flex-column justify-content-center align-items-center">
+                    <div class="aspect-group col-sm-3 d-flex flex-column justify-content-center align-items-center">
                         <div class="avatar-container">
-                            <a href="ResumeProfile.html">
-                                <img src="image/me.jpg"/>
-                            </a>
+                            <img src="image/me.jpg"/>
                         </div>
                     </div>
-                    <div class="menu col d-flex justify-content-center align-items-center">
-                        <a href="ResumeAbi.html">
-                        <p class="text-center">
-                            Abilities
+                    <div class="menu col">
+                        <h3>
+                            Who am I?
+                        </h3>
+                        <p class="content">
+                            I am a graphic designer. My undergraduate major is in graphic design. Nevertheless, I have a lot of experience in a number of other industries through work and self-study, such as education, code (html), business, marketing and human recourse, a little bit of law (IPR, Business Law). I hope a job which is interesting and suits my skills and interests.
                         </p>
-                    </a>
-                        <img src="image/ability.png"/>
-                    </div>
-                    <div class="menu col d-flex justify-content-center align-items-center">
-                        <a href="ResumeCV.html">
-                        <p class="text-center">
-                            My CV
-                        </p>
-                    </a>
-                        <img src="image/cv.png"/>
                     </div>
                 </div>
             </div>
-            <div class="full-resume d-flex no-gutters">
-                <div class="col pic">
-                    <img src="image/click1.jpg"/>
-                </div>
-                <div class="invite-click-container col no-gutters">
-                    <div class="invite-click d-flex flex-column offset-sm-1 no-gutters">
-                        <p class="col-sm-8">
-                            If you want to see the full resume
-                        </p>
-                        <a href="FullResume.html">
-                            Click here
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+            
         <!-- footer -->
         <footer class="footer-container">
             <div class="contact d-flex flex-column justify-content-center align-items-center">
