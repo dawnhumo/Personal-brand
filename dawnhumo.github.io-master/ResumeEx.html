@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Dawn Humo
+        </title>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width, initial-scale=1" name="viewport"/>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"/>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+            </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+            </script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+            </script>
+            <script src="https://kit.fontawesome.com/a076d05399.js">
+            </script>
+            <style>
+                * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+        }
+
+        /*navbar*/
+        .navbar {
+            height: 80px;
+            background-color: #ffffff;
+        }
+
+        .nav-link {
+            color: #09184a;
+            font-weight: 300;
+            white-space: nowrap;
+            text-transform: lowercase;
+            font-size: 18px;
+        }
+
+        .navbar-brand {
+            color: #09184a;
+            font-size: 20px;
+            font-family: Oswald, sans-serif;
+        }
+
+        .nav-link:hover {
+            color: #09184a;
+            font-weight: 500;
+
+        }
+
+        .nav-link:focus {
+            color: #ea4c33;
+            font-weight: 500;
+
+        }
+
+        .navbar-brand:hover {
+            color: #09184a;
+        }
+
+        .nav-link.active {
+            color: #ea4c33;
+            font-weight: 700;
+        }
+
+        .logo {
+            height: 60px;
+            max-width: 90px;
+        }
+
+        /* resume */
+        .resume-container {
+            padding-top: 80px;
+            padding-bottom: 80px;
+        }
+
+        .profile {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            height: calc(100vh - 80px);
+        }
+
+       /* .profile h1:hover {
+            color: #ea4c33;
+        }*/
+
+        .profile p {
+            font-size: 32px;
+            letter-spacing: 1px;
+            font-weight: 400;
+            color: #09184a;
+        }
+
+        .avatar-container {
+            border-radius: 50%;
+            border: 5px solid #444;
+            width: 250px;
+            height: 250px;
+            margin-left: 15px;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+
+        .avatar-container:hover {
+            border-color: #ea4c33;
+        }
+
+        .avatar-container img {
+            width: 100%;
+
+        }
+        .menu {
+            position: relative;
+            height: 150px;
+        }
+
+        .menu p:hover {
+            color: #ea4c33!important;
+            text-decoration: none!important;
+        }
+        .menu a:hover {
+            color: #ea4c33!important;
+            text-decoration: none!important;
+}
+        .menu img {
+            position: absolute;
+            bottom: 0;
+            width: 40px;
+            height: 40px;
+        }
+
+        .text-center {
+            font-size: 48px;
+
+        }
+
+        .full-resume {
+            height: calc(100vh - 80px);
+        }
+
+        .pic {
+            background-color: #999;
+            overflow: hidden;
+        }
+
+        .pic img {
+            width: 100%
+            ;
+        }
+
+        .invite-click-container {
+            background-color: #fc926d;
+        }
+
+        .invite-click {
+            padding-top: 25%;
+            color: #fff;
+        }
+
+        .invite-click p {
+            /*font-style: italic;*/
+            font-size: 32px;
+            font-weight: 400;
+        }
+
+        .invite-click a {
+            padding-top: 10%;
+            font-weight: 600;
+            font-size: 42px;
+            color: #fff;
+        }
+
+        .invite-click a:hover {
+            color: #09184a;
+        }
+
+        /*footer*/
+        .footer-container {
+            
+            background-color: #fc926d;
+            padding-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .contact {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .invite-sentence {
+            font-size: 24px;
+            font-family: Raleway, sans-serif;
+            font-weight: 800;
+            color: #ffffff;
+
+        }
+
+        .copyright-links {
+            background-color: #ffffff;
+            padding-bottom: 60px;
+            padding-top: 60px;
+        }
+
+        .wanna-contact {
+            font-family: Raleway, sans-serif;
+            font-weight: 800;
+            font-size: 14px;
+            padding: 10px 15px 10px 15px;
+            border-radius: 2em;
+            color: #22315f;
+            border: none;
+            outline: none !important;
+        }
+
+        .wanna-contact:hover {
+            background-color: #22315f;
+            color: #ffffff;
+        }
+
+        .fab {
+            color: #22315f;
+            font-size: 24px;
+        }
+
+        .fab:hover {
+            color: #ea4c33;
+        }
+
+        .via {
+            color: #22315f;
+            font-family: Raleway, sans-serif;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        .copyright {
+            color: #22315f;
+            margin: 0;
+        }
+        .resume-container {
+            padding-top: 80px;
+        }
+
+        .profile {
+            padding-top: 100px;
+            padding-bottom: 100px;
+            height: calc(100vh - 80px);
+        }
+
+        .profile p {
+            font-size: 24px;
+            letter-spacing: 2px;
+            font-weight: 400;
+        }
+
+        .avatar-container {
+            border-radius: 50%;
+            border: 5px solid #444;
+            width: 300px;
+            height: 300px;
+            margin-left: 15px;
+            margin-right: 15px;
+            overflow: hidden;
+        }
+        .avatar-container img {
+            width: 100%;
+        }
+
+        .menu {
+            position: relative;
+            height: 150px;
+        }
+
+        h3 {
+            padding-bottom: 15px;
+        }
+
+        .menu img {
+            position: absolute;
+            bottom: 0;
+            width: 40px;
+            height: 40px;
+        }
+
+        .label {
+            font-size: 20px !important;
+            font-weight: 400 !important;
+            margin-bottom: 0px;
+        }
+
+        .content {
+            font-size: 18px !important;
+            font-weight: 300 !important;
+            margin: 0;
+            padding-bottom: 10px;
+            font-family: Raleway, sans-serif;
+        }
+
+        .resume-block {
+            margin-top: 15px;
+            margin-bottom: 60px;
+        }
+
+        .resume-block i {
+            font-size: 12px !important;
+            margin-right: 5px;
+        }
+
+        .cv img {
+            width: 100%;
+        }
+        .cv-container {
+            padding-bottom: 100px;
+            padding-top: 50px;
+        }
+        .ex-container {
+    padding-bottom: 30px;
+}
+
+.experience {
+    padding-top: 150px;
+}
+        /* modal */
+        .modal {
+            color: #22315f;
+        }
+        .modal button[type="submit"],
+        .modal button[type="submit"]:hover,
+        .modal button[type="submit"]:active,
+        .modal button[type="submit"]:focus {
+            border: none;
+            background-color:#ea4c33 !important;
+            outline: none;
+            box-shadow: none !important;
+        }
+            </style>
+        </link>
+    </head>
+    <body class="body">
+        <!-- nav bar -->
+        <nav class="navbar shadow navbar-expand-lg fixed-top">
+            <div class="col-sm-7 row d-flex align-items-center">
+                <a class="navbar-brand" href="index.html">
+                    <img class="col-sm-1 logo" src="https://drive.google.com/uc?id=1VU2WgoVXNfG_4wgz8ZEZsi7UTKOQpMyJ"/>
+                    dawn humo
+                </a>
+            </div>
+            <div class="collapse navbar-collapse col-sm-5" id="navbarSupportedContent">
+                <ul class="navbar-nav container-fluid">
+                    <li class="nav-item col-sm-1">
+                        <a class="nav-link active" href="Resume.html">
+                            Resume
+                            <span class="sr-only">
+                                (current)
+                            </span>
+                        </a>
+                    </li>
+                    <li class="nav-item col-sm-1">
+                        <a class="nav-link" href="Portfolio.html">
+                            Portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown col-sm-1">
+                        <a class="nav-link" href="Myblog.html">
+                            My blog
+                        </a>
+                    </li>
+                    <li class="nav-item col-sm-1">
+                        <a class="nav-link" href="Aboutme.html">
+                            About me
+                        </a>
+                    </li>
+                    <li class="nav-item col-sm-1">
+                        <a class="nav-link" href="Contactme.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+<!-- Experiences -->
+            <div class="experience">
+                <h1 class="text-center d-flex flex-column justify-content-center ex-container">
+                    
+                    Experiences
+                    
+                </h1>
+                <div class="d-flex justify-content-center">
+                    <div class="resume-block col-sm-8 d-flex">
+                        <div class="col-sm-6">
+                            <p class="label">
+                                FPT University
+                            </p>
+                            <p class="content">
+                                May 2017 - 2018
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="label">
+                                Parttime - Telesales
+                            </p>
+                            <p class="content">
+                                I have had experience doing telesale in some places. At FPT University, I have many years of experience participating in organizing events with clubs and organizations.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ex2 -->
+                <div class="d-flex justify-content-center">
+                    <div class="resume-block col-sm-8 d-flex">
+                        <div class="col-sm-6">
+                            <p class="label">
+                                Thien Phuc Investment and Developing Joint Stock Company
+                            </p>
+                            <p class="content">
+                                January 2019 - April 2019
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="label">
+                                Fulltime - Sales and designer 
+                            </p>
+                            <p class="content">
+                               I worked as a trainee here during my internship. I do the design requirements. The main job is to find and take care of customers.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ex3 -->
+                <div class="d-flex justify-content-center">
+                    <div class="resume-block col-sm-8 d-flex">
+                        <div class="col-sm-6">
+                            <p class="label">
+                                Beli Vietnam Education and Training Joint Stock Company
+                            </p>
+                            <p class="content">
+                                June 2019 - September 2019
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="label">
+                                Fulltime - HR and Branch Manager
+                            </p>
+                            <p class="content">
+                               I have experience as a recruiter here, then take the job of branch manager (a branch of the English center). The jobs include: interviewing and finding new employees for the branch, training the staff, planning and implementing the targets set by the superiors.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                    <!-- Ex4 -->
+                <div class="d-flex justify-content-center">
+                    <div class="resume-block col-sm-8 d-flex">
+                        <div class="col-sm-6">
+                            <p class="label">
+                                Writing Academic
+                            </p>
+                            <p class="content">
+                                November 2019 - now
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="label">
+                                Freelancer - Writing
+                            </p>
+                            <p class="content">
+                                Although I don't have an English certificate yet, I use it very well. I do a lot of work related to it. This is one of the most recent jobs.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Ex5 -->
+                <div class="d-flex justify-content-center">
+                    <div class="resume-block col-sm-8 d-flex">
+                        <div class="col-sm-6">
+                            <p class="label">
+                                Abaha Investment Technology Joint Stock Company
+                            </p>
+                            <p class="content">
+                                April 2020 - September 2020
+                            </p>
+                        </div>
+                        <div class="col-sm-6">
+                            <p class="label">
+                                Fulltime - Sales, BA, tester, content marketer
+                            </p>
+                            <p class="content">
+                               I undertake many of the assigned tasks in my capacity here. My main job is a tester, taking care of the customer, analyzing customer requests and handing it over to the developer team. Besides, I look for new clients and guide, solve problems of using web/app for existing customers. Due to my major in design, I am in charge of several requirements for the design and content of the company's page.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ex6--> 
+            </div>
+
+
+
+        <!-- footer -->
+        <footer class="footer-container">
+            <div class="contact d-flex flex-column justify-content-center align-items-center">
+                <p class="invite-sentence">
+                    I'd love to hear from you <3
+                </p>
+                <button class="wanna-contact" data-target=".modal" data-toggle="modal">
+                    Wanna contact me?
+                </button>
+            </div>
+            <div class="copyright-links d-flex flex-column justify-content-center align-items-center">
+                <div class="social-link col-sm-4 d-flex justify-content-between mb-4">
+                    <a class="connect-link" href="https://www.facebook.com/bx.ks.3" target="_blank">
+                        <i class="fab fa-facebook-f">
+                        </i>
+                    </a>
+                    <a class="connect-link" href="https://www.instagram.com/huongg.momm/" target="_blank">
+                        <i class="fab fa-instagram">
+                        </i>
+                    </a>
+                    <a class="connect-link" href="https://www.behance.net/dawnhumo98" target="_blank">
+                        <i class="fab fa-behance">
+                        </i>
+                    </a>
+                    <a class="connect-link" href="https://www.linkedin.com/in/huong-do-330241187/" target="_blank">
+                        <i class="fab fa-linkedin-in">
+                        </i>
+                    </a>
+                    <a class="connect-link" href="https://twitter.com/DawnHumo" target="_blank">
+                        <i class="fab fa-twitter">
+                        </i>
+                    </a>
+                </div>
+                <p class="via">
+                    see me via other social nerwork
+                </p>
+                <p class="copyright">
+                    © Dawn Humo 2020
+                </p>
+            </div>
+            <!-- modal -->
+            <div class="modal fade" role="dialog" tabindex="-1">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">
+                                Quick contact
+                            </h5>
+                            <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                                <span aria-hidden="true">
+                                    ×
+                                </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">
+                                        Email address
+                                    </label>
+                                    <input aria-describedby="emailHelp" class="form-control" id="exampleInputEmail1" placeholder="Enter email" required="" type="email"/>
+                                    <div class="invalid-feedback">
+                                        Required field
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleMessage1">
+                                        Message
+                                    </label>
+                                    <textarea class="form-control" id="exampleInputMessage1" placeholder="Enter your message..." type="text">
+                                    </textarea>
+                                </div>
+                                <button class="btn btn-primary float-right" type="submit">
+                                    Submit
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

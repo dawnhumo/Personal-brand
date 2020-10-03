@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Dawn Humo
+    </title>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js">
+    </script>
+    <script src="https://kit.fontawesome.com/a076d05399.js">
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 500;
+        }
+
+        /*navbar*/
+        .navbar {
+            height: 80px;
+            background-color: #ffffff;
+        }
+
+        .nav-link {
+            color: #09184a;
+            font-weight: 300;
+            white-space: nowrap;
+            text-transform: lowercase;
+            font-size: 18px;
+        }
+
+        .navbar-brand {
+            color: #09184a;
+            font-size: 20px;
+            font-family: Oswald, sans-serif;
+        }
+
+        .nav-link:hover {
+            color: #09184a;
+            font-weight: 500;
+
+        }
+
+        .nav-link:focus {
+            color: #ea4c33;
+            font-weight: 500;
+
+        }
+
+        .navbar-brand:hover {
+            color: #09184a;
+        }
+
+        .nav-link.active {
+            color: #ea4c33;
+            font-weight: 700;
+        }
+
+        .logo {
+            height: 60px;
+            max-width: 90px;
+        }
+
+        /* blog */
+        .myblog {
+            padding-top: 120px;
+            padding-bottom: 60px;
+        }
+
+        .article .title {
+            font-weight: 700;
+        }
+
+        .article .date {
+            font-weight: 500;
+        }
+
+        .article .thumbnail-container {}
+
+        .article img {
+            width: 100%
+        }
+
+        .article .note {
+            font-weight: 300;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .article .description {
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .article .more {
+            background-color: #22315f;
+            color: #fff;
+            padding-left: 30px;
+            padding-right: 30px;
+            box-shadow: none;
+            outline: none;
+        }
+
+        .right-content {
+            padding-right: 30px;
+        }
+
+        .subcribe {
+            margin-bottom: 60px;
+        }
+
+        .subcribe p {
+            font-weight: 500;
+        }
+
+        .subcribe input {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
+        .subcribe button {
+            background-color: #ea4c33;
+            color: #fff;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            box-shadow: none !important;
+            outline: none !important;
+        }
+
+        .subcribe button:hover {
+            color: #22315f;
+        }
+
+        .topic .title {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .topic .value {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-bottom: 0.5px solid #999;
+            margin: 0;
+            font-weight: 300;
+        }
+        .note {
+            font-family: Raleway, sans-serif;
+            font-size: 12px;
+            font-style: italic;
+        }
+.description {
+            font-family: Raleway, sans-serif;
+            font-size: 14px;
+        }
+        /*footer*/
+        .footer-container {
+            /* height: calc(100vh - 80px); */
+            background-color: #fc926d;
+            padding-bottom: 30px;
+            margin-top: 30px;
+        }
+
+        .contact {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .invite-sentence {
+            font-size: 24px;
+            font-family: Raleway, sans-serif;
+            font-weight: 800;
+            color: #ffffff;
+
+        }
+
+        .copyright-links {
+            background-color: #ffffff;
+            padding-bottom: 60px;
+            padding-top: 60px;
+        }
+
+        .wanna-contact {
+            font-family: Raleway, sans-serif;
+            font-weight: 800;
+            font-size: 14px;
+            padding: 10px 15px 10px 15px;
+            border-radius: 2em;
+            color: #22315f;
+            border: none;
+            outline: none !important;
+        }
+
+        .wanna-contact:hover {
+            background-color: #22315f;
+            color: #ffffff;
+        }
+
+        .fab {
+            color: #22315f;
+            font-size: 24px;
+        }
+
+        .fab:hover {
+            color: #ea4c33;
+        }
+
+        .via {
+            color: #22315f;
+            font-family: Raleway, sans-serif;
+            font-style: italic;
+            font-size: 14px;
+        }
+
+        .copyright {
+            color: #22315f;
+            margin: 0;
+        }
+        /* modal */
+        .modal {
+            color: #22315f;
+        }
+        .modal button[type="submit"],
+        .modal button[type="submit"]:hover,
+        .modal button[type="submit"]:active,
+        .modal button[type="submit"]:focus {
+            border: none;
+            background-color:#ea4c33 !important;
+            outline: none;
+            box-shadow: none !important;
+        }
+    </style>
+    </link>
+</head>
+
+<body class="body">
+    <!-- nav bar -->
+    <nav class="navbar shadow navbar-expand-lg fixed-top">
+        <div class="col-sm-7 row d-flex align-items-center">
+
+            <a class="navbar-brand" href="index.html">
+                <img class="col-sm-1 logo" src="https://drive.google.com/uc?id=1VU2WgoVXNfG_4wgz8ZEZsi7UTKOQpMyJ" />
+                dawn humo
+            </a>
+        </div>
+        <div class="collapse navbar-collapse col-sm-5" id="navbarSupportedContent">
+            <ul class="navbar-nav container-fluid">
+                <li class="nav-item col-sm-1">
+                    <a class="nav-link" href="Resume.html">
+                        Resume
+                        <span class="sr-only">
+                            (current)
+                        </span>
+                    </a>
+                </li>
+                <li class="nav-item col-sm-1">
+                    <a class="nav-link" href="Portfolio.html">
+                        Portfolio
+                    </a>
+                </li>
+                <li class="nav-item col-sm-1">
+                    <a class="nav-link active" href="Myblog.html">
+                        My blog
+                    </a>
+                </li>
+                <li class="nav-item col-sm-1">
+                    <a class="nav-link" href="Aboutme.html">
+                        About me
+                    </a>
+                </li>
+                <li class="nav-item col-sm-1">
+                    <a class="nav-link" href="Contactme.html">
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- blog -->
+    <div class="myblog d-flex">
+        <div class="col-sm-8">
+            <!-- article -->
+            <article class="article offset-sm-1">
+                <div class="d-flex align-items-end justify-content-between mb-4">
+                    <h2 class="title mb-0">The corona virus season</h2>
+                    <p class="date mb-0">
+                        14.03.2020
+                    </p>
+                </div>
+                <div class="thumbnail-container">
+                    <img src="image/blog1.jpg" />
+                </div>
+                <p class="note">
+                    We are in the Corona season now. What we should do this time?
+                </p>
+                <p class="description">
+                    <br/>
+                    <br/>
+                    Humanity is collectively facing its most daunting challenge since the Second World War. COVID-19 knows no borders, spares no country or continent, and strikes indiscriminately. By all accounts, we are at least 12 months away from a vaccine.
+
+                    <br/>
+                    <br/>
+
+                    In this race against an invisible enemy, all countries must fight back, but not all begin from the same starting line. In countries where the world’s most vulnerable need humanitarian aid and supplies to beat back the pandemic, cancelled flights and disrupted supply routes hit disproportionately hard. It is in everyone’s interest to stop the virus from spreading unchecked, destroying lives and economies, and continuing to circle around the world.
+
+                    
+                </p>
+                <a type="button" class="more btn" href="MyblogFull.html">
+                    read more
+                </a>
+            </article>
+        </div>
+
+        <div class="col-sm-4 d-flex justify-content-end">
+            <div class="right-content">
+                <div class="subcribe">
+                    <p>Never miss a thing</p>
+                    <form class="form-inline">
+                        <input class="form-control" type="email" placeholder="ex: abc@gmail.com" />
+                        <button type="submit" class="btn">Submit</a>
+                    </form>
+                </div>
+
+                <div class="topic">
+                    <p class="title">
+                        TOPICS
+                    </p>
+
+                    <p class="value">
+                        Corona virus (1)
+                    </p>
+                    <p class="value">
+                        Thank you (1)
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer-container">
+        <div class="contact d-flex flex-column justify-content-center align-items-center">
+            <p class="invite-sentence">
+                I'd love to hear from you <3 </p> <button class="wanna-contact" data-toggle="modal"
+                    data-target=".modal">
+                    Wanna contact me?
+                    </button>
+        </div>
+        <div class="copyright-links d-flex flex-column justify-content-center align-items-center">
+
+            <div class="social-link col-sm-4 d-flex justify-content-between mb-4">
+                <a class="connect-link" href="https://www.facebook.com/bx.ks.3" target="_blank">
+                    <i class="fab fa-facebook-f">
+                    </i>
+                </a>
+                <a class="connect-link" href="https://www.instagram.com/huongg.momm/" target="_blank">
+                    <i class="fab fa-instagram">
+                    </i>
+                </a>
+                <a class="connect-link" href="https://www.behance.net/dawnhumo98" target="_blank">
+                    <i class="fab fa-behance">
+                    </i>
+                </a>
+                <a class="connect-link" href="https://www.linkedin.com/in/huong-do-330241187/" target="_blank">
+                    <i class="fab fa-linkedin-in">
+                    </i>
+                </a>
+                <a class="connect-link" href="https://twitter.com/DawnHumo" target="_blank">
+                    <i class="fab fa-twitter">
+                    </i>
+                </a>
+            </div>
+            <p class="via">
+                see me via other social nerwork
+            </p>
+            <p class="copyright">
+                © Dawn Humo 2020
+            </p>
+        </div>
+        <!-- modal -->
+        <div class="modal fade" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Quick contact</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">Email address</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email" required />
+                                <div class="invalid-feedback">Required field</div>
+                            </div>
+                            <div class="form-group">
+                                <label for="exampleMessage1">Message</label>
+                                <textarea type="text" class="form-control" id="exampleInputMessage1"
+                                    placeholder="Enter your message..."></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary float-right">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
